@@ -31,11 +31,11 @@ public class Main {
         String[] days = {"Sundays", "Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays"};
         for(int i = 0; i < calendar[0].length; i++) {
             numberOfEventsPerWeekday = 0;
-            for(int j = 0; j < calendar.length; j++) {
+            for (String[] strings : calendar) {
                 // Don't forget to flip the iterators in the accessor since we are flipping the direction we are navigating.
                 // Remember, i now controls columns and j now controls rows
-                String event = calendar[j][i];
-                if(event!=null && !event.isEmpty()) {
+                String event = strings[i];
+                if (event != null && !event.isEmpty()) {
                     // Make sure we have an event for the day before counting it
                     numberOfEventsPerWeekday++;
                 }
