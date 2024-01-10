@@ -31,15 +31,11 @@ public class Main {
         for(int i = 0; i < calendar[0].length; i++) {
             numberOfEventsPerWeekday = 0;
             for (String[] strings : calendar) {
-                // Don't forget to flip the iterators in the accessor since we are flipping the direction we are navigating.
-                // Remember, i now controls columns and j now controls rows
                 String event = strings[i];
                 if (event != null && !event.isEmpty()) {
-                    // Make sure we have an event for the day before counting it
                     numberOfEventsPerWeekday++;
                 }
             }
-            // Use the days string array from earlier to convert the day index to a real weekday string
             System.out.println("Number of events on " + days[i] + ": " + numberOfEventsPerWeekday);
         }
 
