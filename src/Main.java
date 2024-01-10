@@ -27,7 +27,6 @@ public class Main {
 
 //count all the events for each of the weekdays
         int numberOfEventsPerWeekday = 0;
-         // We will use this array of day strings for our output later on, so we don't have (day: 1)
         String[] days = {"Sundays", "Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays"};
         for(int i = 0; i < calendar[0].length; i++) {
             numberOfEventsPerWeekday = 0;
